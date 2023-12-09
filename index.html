@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Mi primera pagina" content="Todo lo necesario para practicar">
+    <title>Mi página Web</title>
+    <link rel="shortcut icon" href="assets/images/icono.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <!--Empiezo estructurando la página en 4 bloques, el heder, nav, main y footer-->
+    <header >
+        <h1>Conociendo el mundo Web</h1>
+    </header>
+
+    <nav id="prim">Principal | Fotos | Videos | Contacto</nav> 
+
+    <main>
+        <!--Conosco las section y los article-->
+        <section >
+            <h2 class="section">La Web</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id alias recusandae dolor veritatis voluptatum facere quae hic rem amet aut libero iure tenetur ea delectus non, et fugit saepe quas?</p>
+            <article>HTML</article>
+            <article>CSS</article>
+            <article>JavaScript</article>
+        </section>
+    
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quos quaerat odio ea. Provident molestias tempore beatae quasi dolorum, a quae neque, adipisci eos iste cumque, at tempora omnis facilis?</p>
+        <section>
+            <h3>Lenguajes</h3>
+            <div>
+                <article>Java</article>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus earum odit iste saepe provident. <strong>Praesentium fugit eos aut? </strong> Libero consequatur soluta nesciunt nihil ea ullam eaque distinctio molestiae vero atque.</p>
+                <article>PHP</article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, distinctio quisquam illum molestiae debitis rem alias sapiente, accusantium eligendi voluptatem amet? Tempora minus voluptas amet magnam, id tenetur asperiores cum!</p>
+                <article>Python</article>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A eius suscipit dolor illo reiciendis quam nostrum doloribus eos consequuntur, aperiam magnam enim porro alias in, id tempora quae ratione cum!</p>
+                <article>C#</article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, nostrum rerum voluptates repellendus nobis omnis pariatur nulla voluptatibus voluptatum ea hic enim non libero amet nemo iusto cumque aut recusandae?</p>
+            </div>
+        
+        </section>
+        <section>
+            <!--Ahora veo las listas-->
+            <ul>
+                <h4>Lista de alumnos</h4>
+                <li>Luis</li>
+                <li>Juan</li>
+                <li>Carlos</li>
+                <li>Lucas</li>
+            </ul>
+
+            <ol type="A" start="cereza">
+                <h4>Verdura y frutas</h4>
+                <li>Lechuga</li>
+                <li>plátano</li>
+                <li>cereza</li>
+                <li>frutilla</li>
+            </ol>
+        </section>
+
+        <aside>
+            <!--Listas descriptivas-->
+            <h5>Los Lenguajes de la Web</h5>
+
+            <dl>
+                
+                <dt>HTML</dt>
+                <dd>Lenguaje de Marcado de Hipertexto
+                    Constituye la estructura de una página Web.
+                </dd>
+                <dt>CSS</dt>
+                <dd>Hoja de Estilo en Cascada, constituye el Estiloque tendrá
+                    nuestra página Web.
+                </dd>
+                
+                <dt>JavaScript</dt>
+                <dd>Es el lenguaje de programación que le da funcionalidad
+                    a la página Web.</dd>
+            </dl>
+
+        </aside>
+        <aside>
+            <!--El bloquote puede funcionar como lista si se le coloca como a continuación.
+                Pero, con arto salto de línea y Sangría en el lado izquierdo-->
+            <blockquote>Spring</blockquote>
+            <blockquote>Angular</blockquote>
+            <blockquote>Rest</blockquote>
+            <blockquote>Django</blockquote>
+            <blockquote>Larabel</blockquote>
+            <blockquote>Symfony</blockquote>
+
+        </aside>
+
+        <a href="https://www.google.com/search?q=wikipedia&oq=wiki&gs_lcrp=EgZjaHJvbWUqCQgBECMYJxiKBTIMCAAQRRg5GLEDGIAEMgkIARAjGCcYigUyCggCEAAYsQMYgAQyCggDEAAYsQMYgAQyBwgEEAAYgAQyCggFEAAYsQMYgAQyDQgGEAAYgwEYsQMYgAQyCggHEAAYsQMYgAQyBwgIEAAYgAQyDQgJEAAYgwEYsQMYgATSAQgzMzE2ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8">Ir a Wikipedia</a>
+
+
+        <!--El details mustra una lista oculta, con el título que está en summary-->
+        <details>
+            <summary>Lenguajes de programación</summary>
+                <!--El p también sale como lista, pero sin sangría-->
+                <p>Python</p>
+                <p>Java</p>
+                <p>C#</p>
+                <p>C++</p>
+                <p>Go</p>
+        </details>
+    
+    
+        <br>
+        <aside>Cita del artículo 1</aside>
+        <aside>Cita del artículo 2</aside>
+        <!--Estos son atributos globales: translate y contenteditable-->
+
+        <p>My movie favorite is <span translate="no">TWo Roads</span></p>
+        
+        <p>Mi película favorita es <span contenteditable>Casablanca</span></p>
+        <article>
+            <!--Ahora la table con sus tr( filas) y td(celdas)-->
+            <table border="1">
+                <caption>Productos</caption>
+                
+                <tr>
+                    
+                    <th colspan="2">Producto</th>
+                    <th>Precio</th>
+                </tr>
+                <tr>
+                    <td>37</td>
+                    <td>Lavadora</td>
+                    <td>3444</td>
+                </tr>
+                <tr>
+                    <td>23</td>
+                    <td>pc</td>
+                    <td>552</td>
+                </tr>
+                <tr>
+                    <td>32</td>
+                    <td>lsfa</td>
+                    <td>54</td>
+                </tr>
+                <tr>
+                    <td>34</td>
+                    <td>klsjklfja</td>
+                    <td>595995</td>
+                </tr>
+                <tr>
+                    <td>35</td>
+                    <td>jaja</td>
+                    <td>9948</td>
+                </tr>
+                
+
+            </table>
+
+        </article>
+        <article>
+            <br> <br>
+
+            <!--Integrando audio y video, en cuanto al video el formato avi no se reprodujo , es mejor convertirlo a mp4-->
+        <audio src="assets/multimedia/audio.mp3" type="audio/mp3" controls  >
+        
+
+        </audio>
+        <br>
+        <video width="400px" height="200px" src="assets/multimedia/video.mp4" type="video/mp4" controls >
+
+        </video>
+        <br><br>
+
+            <!--Los formularios-->
+            <form action="pagina1.html" method="post" name="formulario">
+                
+                <label for="">Nombre</label>
+                <input type="text" name="nombre"><br>
+                <label for="">Email</label>
+                <input type="email" name="email"><br>
+                <label for="">Profesión</label>
+                <select name="profesion" id="prof">
+                    <option value="doctor">Doctor</option>
+                    <option value="docente">docente</option>
+                    <option value="Ingeniero">Ingeniero</option>
+                    <option value="Prevencionista">Prevencionista</option>
+                </select>
+            </form>
+        </article>
+        <form action=""></form>
+
+    
+
+    </main>
+
+    <footer>
+        &copy; Derechos reservados 2023 <br>
+        <a href="">Ir a ...</a>
+
+    </footer>
+</body>
+</html>

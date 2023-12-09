@@ -1,0 +1,39 @@
+/*Selectores*/
+/*Selector Universal*/
+
+*{
+    margin: 2%;
+}
+
+/*Selector de elemento*/
+
+h1{
+    color: brown;
+    background-color: aquamarine;
+    text-align: center;
+}
+
+/*Selector de id*/
+#prim{
+    color: blue;
+}
+
+/*Selector de clase*/
+.section{
+    background-color: yellow;
+}
+
+/*Selector de atributo*/
+/*También se puede usar filtro en el atributo, decir
+indicando si el valor del atributo empieza con alguna palabra
+mas(^), si esta al final, la palabra mas($), en cualquier lugar la palabra mas(*)*/
+[href]{
+    color: black;
+    background-color: aquamarine;
+}
+
+.btn-img{
+    width: 25px;
+    height: 20px;
+
+}

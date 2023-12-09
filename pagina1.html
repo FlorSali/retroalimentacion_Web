@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Formularios</h1>
+    <form method="Post">
+        <fieldset>
+            <legend>Datos del Usuario</legend>
+                <label for="nombre_usuario">Nombre</label>
+                <input type="text" name="nombre_usuario" id="nombre_usuario"
+                size="12" placeholder="Escriba su nombre" autofocus>
+                <label for="apellido_usuario">Apellido</label>
+                <input type="text" name="apellido_usuario" id="apellido_usuario"
+                maxlength="8" minlength="5" required><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Gustos del Usuario</legend>
+                <label for="comida_favorita">Comida favorita</label>
+                <input type="text" name="comida_favorita" id="comida_favorita"
+                size="20" placeholder="Escriba su comida favorita"><br>
+                <label for="pelicula_favorita">Película favorita</label>
+                <input type="text" name="pelicula_favorita" id="pelicula_favorita"
+                ><br>
+        </fieldset>
+        <fieldset>
+            <legend>Profesión del Usuario</legend>
+                <label for="profesion">Seleccione:</label>
+                <select name="profesion" id="profesion">
+                    <option value="doctor">Doctor</option>
+                    <option value="Informatico">Informático</option>
+                    <option value="profesor">Profesor</option>
+                    <option value="abogado">Abogado</option>
+
+                </select>
+        </fieldset>
+        <p>
+            <label for="">Comentarios<textarea name="comentarios" id="comentarios" cols="20" rows="3"></textarea></label>
+        </p>
+        <!--Los elementos progess y meter generan barras de avances-->
+        <progress value="30" max="100">0%</progress><br>
+        <progress value="10" max="100">
+            Descargando...
+          </progress><br>
+        <meter value="60" min="0" max="100" low="40" high="80"
+            optimum="100">60</meter><br>
+            <meter value="90" low="0" high="100">
+                Batería: 90%
+              </meter>
+        
+        <p><label for="">Input_email<input type="email"></label></p>
+        <p><label for="">Input_time<input type="time"></label></p>
+        <p><label for="">Input_month<input type="month"></label></p>
+        <p><label for="">Input_search<input type="search"></label></p>
+        <p><label for="">Input_text<input type="text"></label></p>
+        <p><label for="">Input_Url<input type="url"></label></p>
+        <p><label for="">Input_tel<input type="tel"></label></p>
+        <p><label for="">Input_range<input type="range"></label></p>
+        <p><label for="">Input_week<input type="week"></label></p>
+        <p><label for="">Input_hidden<input type="hidden"></label></p>
+        <p><label for="">Input_color<input type="color"></label></p>
+        <p><label for="">Input_checkbox<input type="checkbox"></label></p>
+        <p><label for="">Input_radio<input type="radio"></label></p>
+        <p><label for="">Input_file<input type="file"></label></p>
+        <p><label for="">Input_datatime<input type="datetime"></label></p>
+        <p><label for="">Input_datatime-local<input type="datetime-local"></label></p>
+        <p><label for="">Input_reset<input type="reset"></label></p>
+        <p><label for="">Input_image<input class="btn-img" type="image" src="assets/images/perrito.jpg">Este input sirve como botón de submit</label></p>
+        <p><label for="">Input_pass<input type="password"></label></p>
+        <p><label for="">Input_submit<input type="submit" value="Enviar datos"></label></p><br>
+        <p><label for="">Código postal <input pattern="[0-9]{4}" name="cp" title="Ingrese el formato requerido"></label></p>        
+        <p><label for="">Nombre: <input pattern="[a-z]{1,15}" name="name" title="El nombre es solo con minusculas y no mas de 15 letras"></label></p>
+        <button type="submit">Enviar</button>
+    </form>
+    
+</body>
+</html>
